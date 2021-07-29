@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct MultiButtonsView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
     @EnvironmentObject private var themeManager: ThemeManager
@@ -44,6 +45,7 @@ struct MultiButtonsView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct MultiButtonsView_Previews: PreviewProvider {
         static var previews: some View {
             MultiButtonsView(buttons: [UIModelDataAction("Button 1", "Button1", .link)]).environmentObject(ThemeManager.shared)

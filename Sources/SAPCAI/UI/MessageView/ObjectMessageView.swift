@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct ObjectMessageView: View {
     @EnvironmentObject private var themeManager: ThemeManager
     
@@ -101,6 +102,7 @@ struct ObjectMessageView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct ObjectMessageView_Previews: PreviewProvider {
         static var previews: some View {
             ObjectMessageView(model: UIModelDataContent(text: "text1", list: nil, form: nil, picture: nil, video: nil,

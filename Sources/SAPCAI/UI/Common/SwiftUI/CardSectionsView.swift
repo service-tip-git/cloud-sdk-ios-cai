@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct CardSectionsView: View {
     let section: ObjectSectionData
     @EnvironmentObject private var themeManager: ThemeManager
@@ -32,6 +33,7 @@ struct CardSectionsView: View {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 extension CardSectionsView {
     struct CardSingleLineView: View {
         let secAttribute: ValueData
@@ -78,7 +80,8 @@ extension CardSectionsView {
             }
         }
     }
-    
+
+    @available(iOSApplicationExtension, unavailable)
     struct CardMultiLineView: View {
         let secAttribute: ValueData
         @EnvironmentObject private var viewModel: MessagingViewModel
@@ -131,6 +134,7 @@ extension CardSectionsView {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 struct CardSectionsView_Previews: PreviewProvider {
     static var previews: some View {
         CardSectionsView(section: UIModelDataSection("title", [UIModelDataValue(value: "val1", dataType: nil, rawValue: nil, label: nil, valueState: nil)]))

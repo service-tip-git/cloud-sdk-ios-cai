@@ -1,6 +1,7 @@
 import SwiftUI
 
 /// Menu View that lists the menu actions
+@available(iOSApplicationExtension, unavailable)
 struct MenuButtonView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
     @EnvironmentObject private var themeManager: ThemeManager
@@ -32,6 +33,7 @@ struct MenuButtonView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct MenuButtonView_Previews: PreviewProvider {
         static var previews: some View {
             MenuButtonView(menuActions: [CAIChannelMenuDataAction("Google", "Link", "https://www.google.com", nil)]).environmentObject(testData).environmentObject(ThemeManager.shared)

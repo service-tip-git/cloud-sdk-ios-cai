@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct CarouselItemView: View {
     var carouselItem: CarouselItemMessageData?
     
@@ -22,6 +23,7 @@ struct CarouselItemView: View {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 struct CarouselItemView_Previews: PreviewProvider {
     static var previews: some View {
         CarouselItemView(carouselItem: nil, itemWidth: CGFloat(integerLiteral: 300))

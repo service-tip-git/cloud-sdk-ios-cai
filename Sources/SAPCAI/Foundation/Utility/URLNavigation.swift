@@ -1,6 +1,7 @@
 import SAPCommon
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 public struct URLNavigation {
     @Binding var isUrlSheetPresented: Bool
     let logger = Logger.shared(named: "CAIFoundation.URLNavigation")

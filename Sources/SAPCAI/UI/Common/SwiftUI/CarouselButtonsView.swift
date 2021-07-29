@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct CarouselButtonsView: View {
     @EnvironmentObject private var themeManager: ThemeManager
 
@@ -24,6 +25,7 @@ struct CarouselButtonsView: View {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 struct CarouselButtonsView_Previews: PreviewProvider {
     static var previews: some View {
         CarouselButtonsView(buttonsData: nil)

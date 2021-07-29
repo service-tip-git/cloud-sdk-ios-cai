@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct StaticMenuView: View {
     @Binding var isMenuPresented: Bool
     
@@ -87,6 +88,7 @@ struct StaticMenuView: View {
 }
 
 #if DEBUG
+    @available(iOSApplicationExtension, unavailable)
     struct StaticMenuView_Previews: PreviewProvider {
         static var previews: some View {
             StaticMenuView(isMenuPresented: .constant(false), menuActions: [CAIChannelMenuDataAction("Google", "Link", "https://www.google.com", nil)], menuTitle: "title").environmentObject(testData).environmentObject(ThemeManager.shared)

@@ -2,6 +2,7 @@ import SwiftUI
 
 /// SearchBar
 /// SwiftUI wrapper for rendering a TextField,  magnifer icon and clear button while editing
+@available(iOSApplicationExtension, unavailable)
 public struct SearchBar<S>: View where S: StringProtocol {
     @Binding var text: String
     
@@ -50,6 +51,7 @@ public struct SearchBar<S>: View where S: StringProtocol {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct SearchBar_Previews: PreviewProvider {
         static var previews: some View {
             SearchBar("search", text: .constant("movies")) {

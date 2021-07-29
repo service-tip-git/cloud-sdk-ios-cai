@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct ButtonView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
     @EnvironmentObject private var themeManager: ThemeManager
@@ -61,6 +62,7 @@ struct ButtonView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct ButtonView_Previews: PreviewProvider {
         static var previews: some View {
             let button = UIModelDataAction("Button1", "Button1", .link)

@@ -1,6 +1,7 @@
 import SwiftUI
 import UIKit
 
+@available(iOSApplicationExtension, unavailable)
 public typealias MessagingView = ModifiedContent<ModifiedContent<AssistantView, _EnvironmentKeyWritingModifier<MessagingViewModel?>>, _EnvironmentKeyWritingModifier<ThemeManager?>>
 
 /// This class is meant to be used by UIKit like a standard UIViewController. It will host the SwiftUI `AssistantView` with default parameters.
@@ -13,6 +14,7 @@ public typealias MessagingView = ModifiedContent<ModifiedContent<AssistantView, 
 /// self.navigationController?.pushViewController(vc, animated: true)
 /// ```
 ///
+@available(iOSApplicationExtension, unavailable)
 open class MessagingViewController: UIHostingController<MessagingView> {
     /// Constructor
     /// - Parameter viewModel: MessagingViewModel

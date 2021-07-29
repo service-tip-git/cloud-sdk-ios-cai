@@ -1,6 +1,7 @@
 import SwiftUI
 
 extension UIApplication {
+    @available(iOSApplicationExtension, unavailable)
     var mainWindow: UIWindow? {
         guard let scene = UIApplication.shared.connectedScenes
             .first(where: { scene -> Bool in

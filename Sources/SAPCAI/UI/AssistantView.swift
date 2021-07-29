@@ -23,6 +23,7 @@ import SwiftUI
 ///                                           token: "<#channelToken#>") )
 ///     .environmentObject(themeManager)
 /// ```
+@available(iOSApplicationExtension, unavailable)
 public struct AssistantView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
 
@@ -87,6 +88,7 @@ public struct AssistantView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct AssistantView_Previews: PreviewProvider {
         static func getFioriThemeManager() -> ThemeManager {
             let t = ThemeManager()

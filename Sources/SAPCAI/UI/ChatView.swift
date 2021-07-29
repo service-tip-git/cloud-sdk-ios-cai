@@ -1,6 +1,7 @@
 import SwiftUI
 
 /// Renders a ScrollView with the list of messages provided by the `MessagingViewModel`
+@available(iOSApplicationExtension, unavailable)
 public struct ChatView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
     
@@ -91,6 +92,7 @@ struct Run: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct ChatView_Previews: PreviewProvider {
         static var previews: some View {
             ChatView(data: TypingIndicatorData()).environmentObject(testData).environmentObject(ThemeManager.shared)

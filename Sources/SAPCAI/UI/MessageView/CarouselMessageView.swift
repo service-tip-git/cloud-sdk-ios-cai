@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct CarouselMessageView: View {
     let model: MessageData
     let geometry: GeometryProxy
@@ -76,6 +77,7 @@ struct CarouselMessageView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct CarouselMessageView_Previews: PreviewProvider {
         static var previews: some View {
             GeometryReader { geometry in

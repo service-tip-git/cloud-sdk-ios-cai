@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct ButtonsMessageView: View {
     let model: MessageData
     
@@ -74,6 +75,7 @@ struct ButtonsMessageView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct ButtonsMessageView_Previews: PreviewProvider {
         static var previews: some View {
             Group {

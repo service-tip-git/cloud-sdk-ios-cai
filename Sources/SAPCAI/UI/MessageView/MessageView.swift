@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct MessageView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
     
@@ -69,6 +70,7 @@ struct MessageView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct MessageView_Previews: PreviewProvider {
         static var previews: some View {
             GeometryReader { geometry in

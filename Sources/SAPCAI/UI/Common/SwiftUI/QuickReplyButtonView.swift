@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct QuickReplyButtonView: View {
     var button: PostbackData
     var postbackType: PostbackType = .quickReply
@@ -14,6 +15,7 @@ struct QuickReplyButtonView: View {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 struct QuickReplyButtonView_Previews: PreviewProvider {
     static var previews: some View {
         QuickReplyButtonView(button: UIModelDataAction("b1", "b1", .text)).environmentObject(ThemeManager.shared)

@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct ListMessageView: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @EnvironmentObject private var viewModel: MessagingViewModel
@@ -87,6 +88,7 @@ struct ListMessageView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct ListMessageView_Previews: PreviewProvider {
         static var previews: some View {
             ListMessageView(model: testData.model[0])

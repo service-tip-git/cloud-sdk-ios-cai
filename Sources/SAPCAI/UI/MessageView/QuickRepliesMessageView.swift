@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct QuickRepliesMessageView: View {
     let model: MessageData
     
@@ -44,6 +45,7 @@ struct QuickRepliesMessageView: View {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct QuickRepliesMessageView_Previews: PreviewProvider {
         static var previews: some View {
             GeometryReader { geometry in

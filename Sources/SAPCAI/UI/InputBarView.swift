@@ -3,6 +3,7 @@ import SwiftUI
 /// InputBar view.
 /// Wraps a `TextView` and Send button. Send will call `MessagingViewModel.postMessage(text: String)`
 /// Height of the TextView grows as user types longer text.
+@available(iOSApplicationExtension, unavailable)
 public struct InputBarView: View {
     @EnvironmentObject private var viewModel: MessagingViewModel
     
@@ -76,6 +77,7 @@ struct InputBarViewHeightPrefKey: PreferenceKey {
 }
 
 #if DEBUG
+@available(iOSApplicationExtension, unavailable)
     struct InputBarView_Previews: PreviewProvider {
         static var previews: some View {
             InputBarView().environmentObject(testData).environmentObject(ThemeManager.shared)
